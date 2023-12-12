@@ -15,7 +15,7 @@
     <!-- Header section -->
     <header>
       <h1>Pete Thinkful | Artist</h1>
-      <nav>
+      <nav class="main-nav">
         <a href="#about">About</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
@@ -27,15 +27,19 @@
         <!-- About section -->
         <article id="about">
           <h2>About</h2>
-          <section>
-            <h3>Hi! I'm Pete Thinkful</h3>
-            <div>
+          <section class="about">
+            
+            <div >
               <img
                 class="image-circle"
                 src="images/pete-thinkful.png"
                 alt="Pete Thinkful"
+                
               />
             </div>
+            
+            <div>
+            <h3 >Hi! I'm Pete Thinkful</h3>
             <p>I'm an artist living in Denver, Colorado.</p>
             <p>As an artist, I'm interested in:</p>
             <ul>
@@ -47,6 +51,7 @@
               Please feel free to take a look at my website and feel free to
               <a href="#contact">contact me</a>.
             </p>
+            </div>
           </section>
 
           <section>
@@ -67,20 +72,21 @@
         <hr />
 
         <!-- Portfolio section -->
-        <article id="portfolio">
-          <h2>Portfolio</h2>
-          <section>
+        <article id="portfolio;" class="group;">
+          <h2 class="item;" style="border: 5px solid black;">Portfolio</h2>
+          <section style="border: 5px solid black;" class="item;">
             <h3>Abstract Red</h3>
             <div>
               <img src="images/abstract-red.png" alt="Abstract Red" />
             </div>
-            <p>
+            <p style: width:300px;>
               Vaporware wayfarers heirloom neutra disrupt. Activated charcoal
               waistcoat scenester hell of.
             </p>
           </section>
 
-          <section>
+          <section style="border: 5px solid black;"
+          class="item;">
             <h3>Spiral Zany</h3>
             <div>
               <img src="images/spiral-zany.png" alt="Spiral Zany" />
@@ -91,7 +97,8 @@
             </p>
           </section>
 
-          <section>
+          <section style="border: 5px solid black;"
+          class="item;">
             <h3>Melted Rainbow</h3>
             <div>
               <img src="images/melted-rainbow.png" alt="Melted Rainbow" />
