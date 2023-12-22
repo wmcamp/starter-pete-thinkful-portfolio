@@ -14,65 +14,58 @@ h2,
 h3 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
-  }
+}
 
 /* Header */
 header {
   text-align: center;
   display: flex;
-  flex-direction: row;
- justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-
-.main-nav {
-  padding: 26px;
-  justify-content: center;
-}
-
 
 /* Containers */
 div {
   background-color: #eae2b7;
   margin: auto;
   width: 600px;
- }
+}
 
 article {
   padding: 50px 0;
 }
 
 article div {
-  text-align: left;
+  text-align: center;
   width: 100%;
 }
-.image-circle {
-  border: 2px solid #003049;
-  border-radius: 50%;
-    }
 
-.about {
-  display:flex;
-  flex-direction:row;
-    }
+.flex-row {
+  display: flex;
+  flex-direction: row
+}
 
-.group {
+.flex-column {
   display: flex;
   flex-direction: column;
- flex-wrap: wrap;
+  align-items: flex-start;
+  text-align: left;
 }
 
-.item {
-  flex: 1;
-  margin: 10px;
+.center-self {
+  align-self: center;
 }
 
-
+.limit-width {
+  max-width: 200px;
+  padding: 4px;
+}
 /* Paragraphs */
 p {
   line-height: 1.5;
-  font-size: 14px;
-  font-display: wrap;
-  }
+  margin-block: 0.5em;
+}
 
 /* Links */
 a:link {
@@ -94,7 +87,10 @@ img {
   height: auto;
 }
 
-
+.image-circle {
+  border: 2px solid #003049;
+  border-radius: 50%;
+}
 
 /* Footer */
 footer {
